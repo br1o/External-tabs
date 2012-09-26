@@ -1,5 +1,5 @@
 /**
- * @author benoit & bruno
+ * @author benoit & bruno - test
  */
 
 jQuery(function () {
