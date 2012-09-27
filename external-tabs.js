@@ -1,5 +1,5 @@
 /**
- * @author benoit & bruno - test
+ * @author benoit & bruno
  */
 
 jQuery(function () {
@@ -19,6 +19,7 @@ jQuery(function () {
 	var strAnchor = arrUrlParam['anchor'];
 
 	// tabs
+	
 	var tabContainers = jQuery('div.tabs > div');
 	
 	tabContainers.hide().filter(':first').show();
@@ -30,12 +31,6 @@ jQuery(function () {
 		jQuery(this).addClass('selected');
 		return false;
 	});
-	
-	if(!strSection){
-		jQuery('ul.tabNavigation a').filter(':first').click();	
-	} else {
-		jQuery('ul.tabNavigation a[href="#'+strSection+'"]').click();	
-	}
 	
 	if(!strSection){
 		jQuery('ul.tabNavigation a').filter(':first').click();	
